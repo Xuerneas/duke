@@ -3,6 +3,8 @@ package duke.command;
 import duke.excaptions.IllegalDukeArgumentException;
 import duke.excaptions.IllegalDukeFormatException;
 
+import java.text.ParseException;
+
 /**
  *The Ui class is one of the class in command package which used to deal the interaction with users
  */
@@ -41,6 +43,8 @@ public class Ui {
                 return e.getMessage();
             } catch (IllegalDukeArgumentException e) {
                 return e.getMessage();
+            } catch (ParseException e) {
+                return "Error!!";
             }
 
     }

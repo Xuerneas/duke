@@ -31,6 +31,10 @@ public class Task {
         this.isDone = true;
     }
 
+    public String getDescription() {
+        return this.description;
+    }
+
     /**
      * the Overriding method
      * @return String that in task format
